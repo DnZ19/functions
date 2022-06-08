@@ -17,6 +17,16 @@ console.log(result);
 // greeter("Jan") geeft "Hoi Jan!"
 // greeter("Kees") geeft "Hoi Kees!"
 
+function greeter(greet) {
+  return greet;
+}
+
+const personalGreet = greeter("Hallo");
+const name = "Dennis";
+
+console.log(personalGreet + " " + name);
+
+
 
 
 /* Opdracht 2 */
@@ -25,6 +35,14 @@ console.log(result);
 // minutesToSeconds(1) geeft 60
 // minutesToSeconds(3) geeft 180
 // minutesToSeconds(23) geeft 1380
+
+function minutesToSeconds(Qmin) {
+  return Qmin * 60;
+}
+
+const minToSecCalculator = minutesToSeconds(23);
+
+console.log(minToSecCalculator);
 
 
 
@@ -35,6 +53,18 @@ console.log(result);
 // merge("abra", "cadabra") geeft "abracadabra"
 // merge("zoet", "sappig") geeft "zoetsappig"
 
+function merge(a, b)  {
+
+  const outcome = a + b;
+  return outcome
+
+}
+
+const wordConnector = merge("Abra", "Cadabra");
+
+console.log(wordConnector);
+
+
 
 
 
@@ -44,6 +74,14 @@ console.log(result);
 // calculateDogYears(6) geeft "Jouw hond is 42 jaar oud in mensenjaren."
 // calculateDogYears(2) geeft "Jouw hond is 14 jaar oud in mensenjaren."
 
+function calculateDogYears(dogYears)  {
+  const result = dogYears * 7;
+  return result;
+}
+
+const dogToHumanYearCalcultator = calculateDogYears(2);
+
+console.log("Jouw hond is " + dogToHumanYearCalcultator + " jaar oud in mensenjaren.");
 
 
 /* Opdracht 5 */
@@ -54,6 +92,16 @@ console.log(result);
 // wrapper("beep", "_") geeft "_beep_"
 // wrapper("kaas", "Q") geeft "QkaasQ"
 
+function wrapper(word, character) {
+
+  const result = character + word + character;
+  return result;
+}
+
+const characterWrapper = wrapper("Dennis", "*");
+
+console.log(characterWrapper);
+
 
 
 /* Bonus opdracht  */
@@ -63,3 +111,10 @@ console.log(result);
 // createDetailString({ firstName: 'Kees', lastName: 'Klaasen', profession: 'brandweerman'}) geeft "Het beroep vam Kees Klaasen is brandweerman."
 
 
+function createDetailString(detailsObject)  {
+  return "Het beroep van " + detailsObject.firstName + " " + detailsObject.lastName + " is " + detailsObject.profession;
+
+}
+
+const detailString = createDetailString({firstName: "Dennis", lastName: "Rijkers", profession: "Coach"});
+console.log(detailString);

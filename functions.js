@@ -14,11 +14,25 @@ console.log(greeting);
 // Schrijf een functie genaamd getSchool, die de string "Novi Hogeschool" teruggeeft
 // ---- Verwachte uitkomst bij het aanroepen van de functie: "Novi Hogeschool"
 
+function getSchool()  {
+  return "Novi Hogeschool";
+}
 
+const school = getSchool();
+
+console.log(school);
 
 /* Opdracht 2 */
 // Schrijf een functie genaamd compliment, die jou een complimentje geeft!
 // ---- Verwachte uitkomst bij het aanroepen van de functie: "Lekker bezig met die functies, Jan!"
+
+function complimentGiver()  {
+  return "Lekker bezig met die functies man!";
+}
+
+const compliment = complimentGiver();
+
+console.log(compliment);
 
 
 
@@ -27,7 +41,29 @@ console.log(greeting);
 // ---- Verwachte uitkomst bij het aanroepen van de functie: [8, 8.5, 6, 7]
 
 
+function getGrades() {
+  return [8, 8.5, 6, 7];
+}
+
+const grades = getGrades();
+
+console.log(grades);
 
 /* Opdracht 4 */
 // Schrijf een functie genaamd getDetails, die een object met daarin jouw eigen naam en achternaam teruggeeft.
 // ---- Verwachte uitkomst bij het aanroepen van de functie: { firstName: 'Jan', lastName: 'Janssen' }
+
+function getDetails() {
+
+  const personalDetails = {
+    firstName: "Dennis",
+    lastName: "Rijkers",
+
+  }
+
+  return personalDetails;
+}
+
+const myName = getDetails();
+
+console.log(myName);
